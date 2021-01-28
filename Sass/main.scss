@@ -1,1 +1,48 @@
 @import "reset";
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap');
+
+$neon-green: #54E6AF;
+$dark-gray: #2C344B;
+$very-dark-blue: #121725;
+$white: white;
+$gray-blue: #5A668A;
+$light-gray-blue: #C2CBE5;
+
+
+
+body {
+    margin: 62px 24px;
+    text-align: center;
+    background-color: $very-dark-blue;
+    
+}
+
+main {
+    font-family: 'Chivo', sans-serif;
+    font-size: 15px;
+    color: $light-gray-blue;
+    line-height: 25px;
+    
+    .title {
+        margin: 70px 0 35px 0;
+        font-family: 'Chivo', sans-serif;
+        font-size: 26px;
+        line-height: 38px;
+        text-transform: uppercase;
+        color: white;
+    
+        em {
+            color: $neon-green;
+        }
+    }
+
+}
+
+
+
+
+
+
+form {
+    margin-top: 46px;
+}

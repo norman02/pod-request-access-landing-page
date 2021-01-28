@@ -2,6 +2,7 @@
    v2.0-modified | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -361,5 +362,35 @@ textarea {
   background: #ccc;
   color: #000;
   padding: 0.2em 0;
+}
+
+body {
+  margin: 62px 24px;
+  text-align: center;
+  background-color: #121725;
+}
+
+main {
+  font-family: 'Chivo', sans-serif;
+  font-size: 15px;
+  color: #C2CBE5;
+  line-height: 25px;
+}
+
+main .title {
+  margin: 70px 0 35px 0;
+  font-family: 'Chivo', sans-serif;
+  font-size: 26px;
+  line-height: 38px;
+  text-transform: uppercase;
+  color: white;
+}
+
+main .title em {
+  color: #54E6AF;
+}
+
+form {
+  margin-top: 46px;
 }
 /*# sourceMappingURL=main.css.map */
