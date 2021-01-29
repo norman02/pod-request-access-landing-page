@@ -14,7 +14,7 @@ body {
     margin: 62px 24px;
     text-align: center;
     background-color: $very-dark-blue;
-    
+
 }
 
 main {
@@ -38,11 +38,43 @@ main {
 
 }
 
+footer {
 
+    .platforms {
+        margin-top: 40px; 
+        display: flex;  
+        flex-direction: row; 
+        justify-content: space-between;
+      
+        .brand {
+            width: 60px;  
+            height: 17px; 
+        }
+    }
 
+    form {
+        margin-top: 46px;
+        display: flex;
+        flex-direction: column;
 
+        .input {
+            height: 47px;
+            border: none;
+            outline: none;
+            margin-bottom: 16px;
+            border-radius: 28px;
+            font-family: 'Chivo', sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+        }
 
-
-form {
-    margin-top: 46px;
+        .email-field {
+            background-color: $dark-gray;
+            
+        }
+    }
 }
+
+
+
+

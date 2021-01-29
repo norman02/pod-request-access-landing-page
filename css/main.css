@@ -390,7 +390,48 @@ main .title em {
   color: #54E6AF;
 }
 
-form {
+footer .platforms {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .platforms .brand {
+  width: 60px;
+  height: 17px;
+}
+
+footer form {
   margin-top: 46px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer form .input {
+  height: 47px;
+  border: none;
+  outline: none;
+  margin-bottom: 16px;
+  border-radius: 28px;
+  font-family: 'Chivo', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+footer form .email-field {
+  background-color: #2C344B;
 }
 /*# sourceMappingURL=main.css.map */
