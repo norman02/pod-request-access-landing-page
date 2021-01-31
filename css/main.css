@@ -366,6 +366,7 @@ textarea {
 }
 
 body {
+  font-family: 'Chivo', sans-serif;
   text-align: center;
   overflow-x: hidden;
   background-size: contain;
@@ -386,7 +387,6 @@ body {
   background-color: #121725;
   height: 100vh;
   width: 100vw;
-  z-index: -20;
 }
 
 .background::before {
@@ -415,15 +415,13 @@ body {
 }
 
 main {
-  font-family: 'Chivo', sans-serif;
   font-size: 15px;
   color: #C2CBE5;
   line-height: 25px;
 }
 
 main .title {
-  margin: 70px 0 35px 0;
-  font-family: 'Chivo', sans-serif;
+  margin: 70px auto 35px auto;
   font-size: 26px;
   line-height: 38px;
   text-transform: uppercase;
@@ -466,7 +464,6 @@ footer form .input {
   outline: none;
   margin-bottom: 16px;
   border-radius: 28px;
-  font-family: 'Chivo', sans-serif;
   font-weight: 700;
   font-size: 14px;
 }
