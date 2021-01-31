@@ -366,9 +366,16 @@ textarea {
 }
 
 body {
-  margin: 62px 24px;
   text-align: center;
   background-color: #121725;
+}
+
+.container {
+  margin: 0 24px;
+}
+
+.logo {
+  margin-top: 62px;
 }
 
 main {
@@ -406,7 +413,6 @@ footer .platforms {
 }
 
 footer .platforms .brand {
-  width: 60px;
   height: 17px;
 }
 
@@ -438,5 +444,9 @@ footer form .email-field {
 
 footer form .submit {
   background-color: #54E6AF;
+}
+
+footer form .submit:hover {
+  background-color: #B3FFE2;
 }
 /*# sourceMappingURL=main.css.map */

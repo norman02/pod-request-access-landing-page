@@ -12,10 +12,17 @@ $light-gray-blue: #C2CBE5;
 
 
 body {
-    margin: 62px 24px;
     text-align: center;
     background-color: $very-dark-blue;
 
+}
+
+.container {
+    margin: 0 24px;
+}
+
+.logo {
+    margin-top: 62px;
 }
 
 main {
@@ -23,6 +30,8 @@ main {
     font-size: 15px;
     color: $light-gray-blue;
     line-height: 25px;
+
+    
     
     .title {
         margin: 70px 0 35px 0;
@@ -48,7 +57,6 @@ footer {
         justify-content: space-between;
       
         .brand {
-            width: 60px;  
             height: 17px; 
         }
     }
@@ -70,13 +78,16 @@ footer {
         }
 
         .email-field {
-            background-color: $dark-gray;
-            
-            
+            background-color: $dark-gray;          
         }
 
         .submit {
             background-color: $neon-green;
+            
+            &:hover {
+                background-color: #B3FFE2;
+            }
+            
         }
 
     }
