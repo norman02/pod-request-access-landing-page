@@ -13,7 +13,7 @@
 
 <body>
   <div class="background">
-    <header>
+    <header class="container">
       <img class="logo" src="./assets/desktop/logo.svg" alt="pod logo">
     </header>
 
@@ -24,29 +24,33 @@
         Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify,
         Apple Podcasts, Google Podcasts, Pocket Casts and more!
       </p>
+      <div class="call-to-action">
+        <div class="platforms">
 
-    </main>
+          <img class="brand spotify" src="./assets/desktop/spotify.svg" alt="Spotify">
 
-    <footer class="container">
-      <div class="platforms">
+          <img class="brand apple" src="./assets/desktop/apple-podcast.svg" alt="Apple Podcasts">
 
-        <img class="brand spotify" src="./assets/desktop/spotify.svg" alt="Spotify">
+          <img class="brand google" src="./assets/desktop/google-podcasts.svg" alt="Google Podcasts">
 
-        <img class="brand apple" src="./assets/desktop/apple-podcast.svg" alt="Apple Podcasts">
+          <img class="brand pocket_casts" src="./assets/desktop/pocket-casts.svg" alt="Pocket Casts">
+        </div>
 
-        <img class="brand google" src="./assets/desktop/google-podcasts.svg" alt="Google Podcasts">
-
-        <img class="brand pocket_casts" src="./assets/desktop/pocket-casts.svg" alt="Pocket Casts">
+        <form>
+          <input class="input email-field" type="email" placeholder="Email address...">
+          <p id="email-error" class="error">Oops! Please check your email</p>
+          <button class="input submit">Request access</button>
+        </form>
       </div>
 
-      <form>
-        <input class="input email-field" type="text" placeholder="Email address...">
-        <p id="email-error" class="error">Oops! Please check your email</p>
-        <button class="input submit">Request access</button>
-      </form>
-    </footer>
+      <div class="dots">
+        
+      </div>
+    </main>
+
 
   </div>
 </body>
 <script src="./script.js"></script>
+
 </html>

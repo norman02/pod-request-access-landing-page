@@ -1,0 +1,66 @@
+@include media-md {
+    body {
+        text-align: left;
+    }
+
+    .background {
+        align-items: flex-start;
+        background-image: url('../assets/tablet/image-host.jpg');
+        background-repeat: no-repeat;
+        background-position: top right;
+
+        &::before {
+            display: none;    
+        }
+    }
+
+    .container {
+        margin: 0px 40px;
+    }
+
+    .logo {
+        margin-top: 50px;
+        margin-bottom: 168px;
+    }
+
+    main {
+        height: 100vh;
+        background-color: $background-color;
+        background-image: url('../assets/desktop/bg-pattern-dots.svg');
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        width: 635px;
+        font-size: 18px;
+        line-height: 28px;
+
+        .title {
+            margin: 106px auto 41px auto;
+            font-size: 48px;
+            line-height: 56px;
+        }
+
+        p, form {
+          width: 432px;  
+        }
+
+        .call-to-action {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        form {
+            padding: 5px;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: $form-field-color;
+            border-radius: 28px;
+
+            .input {
+                margin-bottom: 0px;   
+            }
+
+        }
+    }
+
+
+}

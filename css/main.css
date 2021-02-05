@@ -369,7 +369,6 @@ body {
   font-family: 'Chivo', sans-serif;
   text-align: center;
   overflow-x: hidden;
-  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -432,22 +431,21 @@ main .title em {
   color: #54E6AF;
 }
 
-footer .platforms {
-  margin-top: 40px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+main .platforms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 40px;
 }
 
-footer .platforms .brand {
+main .platforms .brand {
   height: 17px;
 }
 
-footer form {
+main form {
   margin-top: 46px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -458,7 +456,7 @@ footer form {
           flex-direction: column;
 }
 
-footer form .input {
+main form .input {
   padding: 18px;
   border: none;
   outline: none;
@@ -468,12 +466,12 @@ footer form .input {
   font-size: 14px;
 }
 
-footer form .email-field {
+main form .email-field {
   background-color: #2C344B;
   color: white;
 }
 
-footer form .error {
+main form .error {
   display: none;
   margin-top: -10px;
   margin-bottom: 10px;
@@ -481,17 +479,83 @@ footer form .error {
   font-weight: 700;
 }
 
-footer form .error-active {
+main form .error-active {
   display: block;
 }
 
-footer form .submit {
+main form .submit {
   background-color: #54E6AF;
   -webkit-box-shadow: 0px 25px 20px #54e6ae2d;
           box-shadow: 0px 25px 20px #54e6ae2d;
 }
 
-footer form .submit:hover {
+main form .submit:hover {
   background-color: #B3FFE2;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    text-align: left;
+  }
+  .background {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    background-image: url("../assets/tablet/image-host.jpg");
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+  .background::before {
+    display: none;
+  }
+  .container {
+    margin: 0px 40px;
+  }
+  .logo {
+    margin-top: 50px;
+    margin-bottom: 168px;
+  }
+  main {
+    height: 100vh;
+    background-color: #121725;
+    background-image: url("../assets/desktop/bg-pattern-dots.svg");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    width: 635px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  main .title {
+    margin: 106px auto 41px auto;
+    font-size: 48px;
+    line-height: 56px;
+  }
+  main p, main form {
+    width: 432px;
+  }
+  main .call-to-action {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  main form {
+    padding: 5px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: #2C344B;
+    border-radius: 28px;
+  }
+  main form .input {
+    margin-bottom: 0px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

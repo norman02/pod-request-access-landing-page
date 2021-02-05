@@ -2,7 +2,6 @@ body {
     font-family: 'Chivo', sans-serif;
     text-align: center;
     overflow-x: hidden;
-    background-size: contain;
     background-repeat: no-repeat;
 }
 
@@ -56,14 +55,12 @@ main {
         }
     }
 
-}
 
-footer {
 
     .platforms {
-        margin-top: 40px;  
-        flex-direction: row; 
+        display: flex;
         justify-content: space-between;
+        margin-top: 40px;  
       
         .brand {
             height: 17px; 
@@ -114,8 +111,8 @@ footer {
         }
 
     }
+
 }
 
-@include media-md {
-    
-}
+
+
