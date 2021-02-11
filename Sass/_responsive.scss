@@ -4,6 +4,7 @@
     }
 
     .background {
+
         align-items: flex-start;
         background-image: url('../assets/tablet/image-host.jpg');
         background-repeat: no-repeat;
@@ -28,7 +29,7 @@
         background-color: $background-color;
         background-image: url('../assets/desktop/bg-pattern-dots.svg');
         background-repeat: no-repeat;
-        background-position: left bottom;
+        background-position: bottom left;
         width: 635px;
         font-size: 18px;
         line-height: 28px;
@@ -44,22 +45,25 @@
         }
 
         .call-to-action {
+            
             display: flex;
             flex-direction: column-reverse;
-        }
+            
 
-        form {
-            padding: 5px;
-            flex-direction: row;
-            justify-content: space-between;
-            background-color: $form-field-color;
-            border-radius: 28px;
-
-            .input {
-                margin-bottom: 0px;   
+            form {
+                padding: 5px;
+                flex-direction: row;
+                justify-content: space-between;
+                background-color: $form-field-color;
+                border-radius: 28px;
+    
+                .input {
+                    margin-bottom: 0px;   
+                }
+    
             }
-
         }
+
     }
 
 

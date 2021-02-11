@@ -373,6 +373,7 @@ body {
 }
 
 .background {
+  overflow-y: scroll;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -520,7 +521,7 @@ main form .submit:hover {
     background-color: #121725;
     background-image: url("../assets/desktop/bg-pattern-dots.svg");
     background-repeat: no-repeat;
-    background-position: left bottom;
+    background-position: bottom left;
     width: 635px;
     font-size: 18px;
     line-height: 28px;
@@ -542,7 +543,7 @@ main form .submit:hover {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
-  main form {
+  main .call-to-action form {
     padding: 5px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -554,7 +555,7 @@ main form .submit:hover {
     background-color: #2C344B;
     border-radius: 28px;
   }
-  main form .input {
+  main .call-to-action form .input {
     margin-bottom: 0px;
   }
 }

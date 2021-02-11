@@ -6,12 +6,14 @@ body {
 }
 
 .background {
+    overflow-y: scroll;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: $background-color;
     height: 100vh;
     width: 100vw;
+
 
     &::before {
         content: "";
@@ -66,6 +68,7 @@ main {
             height: 17px; 
         }
     }
+
 
     form {
         margin-top: 46px;
