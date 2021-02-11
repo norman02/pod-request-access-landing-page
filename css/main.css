@@ -531,7 +531,7 @@ main form .submit:hover {
     font-size: 48px;
     line-height: 56px;
   }
-  main p, main form {
+  main p, main form, main .platforms {
     width: 432px;
   }
   main .call-to-action {
@@ -557,6 +557,25 @@ main form .submit:hover {
   }
   main .call-to-action form .input {
     margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .background {
+    background-image: url("../assets/desktop/image-host.jpg");
+    background-position: right 130px;
+  }
+  .logo {
+    margin-top: 103px;
+  }
+  .container {
+    margin: 0px 165px;
+  }
+  main .title {
+    font-size: 52px;
+  }
+  main p, main form, main .platforms {
+    width: 445px;
   }
 }
 /*# sourceMappingURL=main.css.map */
