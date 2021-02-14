@@ -519,9 +519,6 @@ main form .submit:hover {
   main {
     height: 100vh;
     background-color: #121725;
-    background-image: url("../assets/desktop/bg-pattern-dots.svg");
-    background-repeat: no-repeat;
-    background-position: bottom left;
     width: 635px;
     font-size: 18px;
     line-height: 28px;
@@ -558,9 +555,18 @@ main form .submit:hover {
   main .call-to-action form .input {
     margin-bottom: 0px;
   }
+  .dots {
+    position: absolute;
+    bottom: 0px;
+    left: 40px;
+    width: 232px;
+    height: 105px;
+    background-image: url("../assets/desktop/bg-pattern-dots.svg");
+    background-repeat: no-repeat;
+  }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1100px) {
   .background {
     background-image: url("../assets/desktop/image-host.jpg");
     background-position: right 130px;
@@ -576,6 +582,24 @@ main form .submit:hover {
   }
   main p, main form, main .platforms {
     width: 445px;
+  }
+  .dots {
+    bottom: 80px;
+    right: 0px;
+    left: auto;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  body {
+    background-color: #121725;
+  }
+  .background {
+    margin: auto;
+    max-width: 2000px;
+  }
+  .background .dots {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */

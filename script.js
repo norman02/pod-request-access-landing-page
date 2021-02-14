@@ -1,6 +1,6 @@
 const error = document.getElementById('email-error')
 
-let emailIsValid = true;
+let emailIsValid = false;
 
 const emailError = ()=> {
     if (!emailIsValid) {

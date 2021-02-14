@@ -27,9 +27,6 @@
     main {
         height: 100vh;
         background-color: $background-color;
-        background-image: url('../assets/desktop/bg-pattern-dots.svg');
-        background-repeat: no-repeat;
-        background-position: bottom left;
         width: 635px;
         font-size: 18px;
         line-height: 28px;
@@ -64,8 +61,17 @@
             }
         }
 
+        
     }
-
+    .dots {
+        position: absolute;
+        bottom: 0px;
+        left: 40px;
+        width: 232px;
+        height: 105px;
+        background-image: url('../assets/desktop/bg-pattern-dots.svg');
+        background-repeat: no-repeat;
+    }
 
 }
 
@@ -85,13 +91,35 @@
 
     main {
         
-
         .title {
             font-size: 52px;
         }
 
         p, form, .platforms {
             width: 445px;
+        }
+
+    }
+
+    .dots {
+        bottom: 80px;
+        right: 0px;
+        left: auto;
+    }
+
+}
+
+@include media-xl {
+
+    body {
+        background-color: $background-color;
+    }
+    .background {
+        margin: auto;
+        max-width: 2000px;
+
+        .dots {
+            display: none;
         }
     }
 }
