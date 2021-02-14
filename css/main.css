@@ -432,7 +432,7 @@ main .title em {
   color: #54E6AF;
 }
 
-main .platforms {
+main .call-to-action .platforms {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -442,22 +442,17 @@ main .platforms {
   margin-top: 40px;
 }
 
-main .platforms .brand {
+main .call-to-action .platforms .brand {
   height: 17px;
 }
 
-main form {
+main .call-to-action form {
+  display: -ms-grid;
+  display: grid;
   margin-top: 46px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
-main form .input {
+main .call-to-action form .input {
   padding: 18px;
   border: none;
   outline: none;
@@ -467,12 +462,12 @@ main form .input {
   font-size: 14px;
 }
 
-main form .email-field {
+main .call-to-action form .email-field {
   background-color: #2C344B;
   color: white;
 }
 
-main form .error {
+main .call-to-action form .error {
   display: none;
   margin-top: -10px;
   margin-bottom: 10px;
@@ -480,17 +475,17 @@ main form .error {
   font-weight: 700;
 }
 
-main form .error-active {
+main .call-to-action form .error-active {
   display: block;
 }
 
-main form .submit {
+main .call-to-action form .submit {
   background-color: #54E6AF;
   -webkit-box-shadow: 0px 25px 20px #54e6ae2d;
           box-shadow: 0px 25px 20px #54e6ae2d;
 }
 
-main form .submit:hover {
+main .call-to-action form .submit:hover {
   background-color: #B3FFE2;
 }
 
@@ -549,11 +544,31 @@ main form .submit:hover {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    background-color: #2C344B;
     border-radius: 28px;
+    row-gap: 15px;
+        grid-template-areas: 'email email email submit' 'error error error error';
   }
   main .call-to-action form .input {
     margin-bottom: 0px;
+    border: 5px solid #2C344B;
+  }
+  main .call-to-action form .email-field {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: email;
+    margin-right: -50px;
+  }
+  main .call-to-action form .error {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-area: error;
+  }
+  main .call-to-action form .submit {
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+    grid-area: submit;
   }
   .dots {
     position: absolute;

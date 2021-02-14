@@ -58,11 +58,8 @@ main {
     }
 
 
-
-    
-
     .call-to-action {
-        display: grid;
+        
         .platforms {
             display: flex;
             justify-content: space-between;
@@ -73,9 +70,9 @@ main {
             }
         }
         form {
+            display: grid;
             margin-top: 46px;
-            display: flex;
-            flex-direction: column;
+            
     
             .input {
                 padding: 18px;
