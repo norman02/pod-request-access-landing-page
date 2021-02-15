@@ -449,6 +449,7 @@ main .call-to-action .platforms .brand {
 main .call-to-action form {
   display: -ms-grid;
   display: grid;
+      grid-template-areas: 'email' 'error' 'submit';
   margin-top: 46px;
 }
 
@@ -463,12 +464,18 @@ main .call-to-action form .input {
 }
 
 main .call-to-action form .email-field {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: email;
   background-color: #2C344B;
   color: white;
 }
 
 main .call-to-action form .error {
   display: none;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: error;
   margin-top: -10px;
   margin-bottom: 10px;
   color: red;
@@ -480,6 +487,9 @@ main .call-to-action form .error-active {
 }
 
 main .call-to-action form .submit {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: submit;
   background-color: #54E6AF;
   -webkit-box-shadow: 0px 25px 20px #54e6ae2d;
           box-shadow: 0px 25px 20px #54e6ae2d;
@@ -536,39 +546,16 @@ main .call-to-action form .submit:hover {
             flex-direction: column-reverse;
   }
   main .call-to-action form {
-    padding: 5px;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+        grid-template-areas: 'email email submit' 'error error error';
+    grid-row-gap: 15px;
     border-radius: 28px;
-    row-gap: 15px;
-        grid-template-areas: 'email email email submit' 'error error error error';
   }
   main .call-to-action form .input {
-    margin-bottom: 0px;
+    margin: 5px;
     border: 5px solid #2C344B;
   }
-  main .call-to-action form .email-field {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
-    grid-area: email;
-    margin-right: -50px;
-  }
-  main .call-to-action form .error {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 4;
-    grid-area: error;
-  }
   main .call-to-action form .submit {
-    -ms-grid-row: 1;
-    -ms-grid-column: 4;
-    grid-area: submit;
+    margin-left: -50px;
   }
   .dots {
     position: absolute;

@@ -42,41 +42,24 @@
         }
 
         .call-to-action {
-            
             display: flex;
             flex-direction: column-reverse;
             
 
             form {
-                padding: 5px;
-                flex-direction: row;
-                justify-content: space-between;
-                border-radius: 28px;
-                row-gap: 15px;
-                grid-template-areas: 
-                'email email email submit'
-                'error error error error'
-                ;
+                grid-template-areas: 'email email submit'
+                'error error error';
+                grid-row-gap: 15px;
+                border-radius: 28px;  
                 
-    
                 .input {
-                    margin-bottom: 0px;
-                    border: 5px solid $form-field-color;   
-                }
-
-                .email-field {
-                    grid-area: email;
-                    margin-right: -50px;
-                }
-
-                .error {
-                    grid-area: error;
+                    margin: 5px;
+                    border: 5px solid $form-field-color;
                 }
 
                 .submit {
-                    grid-area: submit;
+                    margin-left: -50px;
                 }
-    
             }
         }
 
